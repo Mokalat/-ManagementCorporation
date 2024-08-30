@@ -1,0 +1,576 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+@import url(./font/Jalnan.css);
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Jalnan'; }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+.resultArea {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1500; }
+  .resultArea .resultBox {
+    width: 355px;
+    height: 355px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 10px solid #000;
+    border-radius: 50%;
+    overflow: hidden; }
+    .resultArea .resultBox a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .resultArea .resultBox a .resultTxt1 {
+        width: 100%;
+        height: 110px;
+        font-size: 3.4375rem;
+        text-align: center;
+        line-height: 110px; }
+      .resultArea .resultBox a .resultTxt2 {
+        width: 100%;
+        height: 47px;
+        display: flex;
+        justify-content: center; }
+        .resultArea .resultBox a .resultTxt2 .txtBox {
+          width: 252px;
+          height: 47px;
+          background-color: #000;
+          padding: 0 30px;
+          border-radius: 24px; }
+          .resultArea .resultBox a .resultTxt2 .txtBox p {
+            width: 100%;
+            height: 100%;
+            line-height: 48px;
+            font-size: 2.3125rem;
+            text-align: center;
+            color: #fff; }
+        .resultArea .resultBox a .resultTxt2 .txtBox1 {
+          width: 252px;
+          height: 47px;
+          background-color: #000;
+          padding: 0 30px;
+          border-radius: 24px; }
+          .resultArea .resultBox a .resultTxt2 .txtBox1 p {
+            width: 100%;
+            height: 100%;
+            line-height: 47px;
+            font-size: 1.4375rem;
+            text-align: center;
+            color: #fff; }
+      .resultArea .resultBox a .resultImg {
+        width: 100%;
+        height: 178px;
+        background-image: url(../img/quizResult2.gif);
+        background-position: center top;
+        background-size: 224px;
+        background-repeat: no-repeat; }
+  .resultArea .trueBox {
+    border: 10px solid #36beff; }
+    .resultArea .trueBox a .resultTxt1 {
+      color: #2c7eea; }
+    .resultArea .trueBox a .resultTxt2 .txtBox {
+      background-color: #ef787a; }
+    .resultArea .trueBox a .resultTxt2 .txtBox1 {
+      background-color: #ef787a; }
+    .resultArea .trueBox a .resultImg {
+      background-image: url(../img/quizResult1.gif);
+      background-position: center top -30px;
+      background-size: 271px; }
+  .resultArea .exTrueBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -177.5px;
+    z-index: 200; }
+  .resultArea .falseBox {
+    border: 10px solid #f0830a; }
+    .resultArea .falseBox a .resultTxt1 {
+      color: #f0830a; }
+    .resultArea .falseBox a .resultTxt2 .txtBox {
+      background-color: #0075c2; }
+    .resultArea .falseBox a .resultTxt2 .txtBox1 {
+      background-color: #0075c2; }
+    .resultArea .falseBox a .resultImg {
+      background-image: url(../img/quizResult2.gif);
+      background-position: center top;
+      background-size: 224px; }
+  .resultArea .explanationBox {
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    word-break: keep-all;
+    overflow: hidden;
+    width: 355px;
+    height: 355px;
+    background-color: #0075c2;
+    border-radius: 50%;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -85px;
+    margin-left: -177.5px;
+    z-index: 100; }
+    .resultArea .explanationBox p {
+      font-family: 'S-CoreDream-4Regular';
+      font-weight: 700;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.8em;
+      text-align: center; }
+  .resultArea .stoolMargin p {
+    margin-bottom: 15px; }
+
+.allArea {
+  width: 100%;
+  overflow: hidden; }
+  .allArea .backgroundImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 170px);
+    margin-top: 100px;
+    min-height: 700px;
+    background-image: url(../img/quizBackimg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover; }
+    .allArea .backgroundImg .contentCenter {
+      width: 1000px;
+      height: 100%;
+      position: relative; }
+      .allArea .backgroundImg .contentCenter h1 {
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: #2c7eea;
+        font-family: 'Jalnan';
+        height: 100px;
+        line-height: 100px;
+        margin-bottom: 30px; }
+      .allArea .backgroundImg .contentCenter .quizBoxArea {
+        width: 100%;
+        height: 565px; }
+        .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder {
+          width: 100%;
+          height: 100%;
+          border: 10px solid #0075c2;
+          box-sizing: border-box;
+          border-radius: 50px;
+          background-color: #fff;
+          padding: 25px; }
+          .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead {
+            width: 100%;
+            height: 83px;
+            margin-top: -25px;
+            position: relative; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizNumber {
+              width: 164px;
+              height: 56px;
+              position: absolute;
+              left: 50%;
+              margin-left: -84px;
+              overflow: hidden; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizNumber h2 {
+                text-align: center;
+                position: absolute;
+                width: 100%;
+                z-index: 200;
+                color: white; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizNumber .numBack {
+                width: 164px;
+                height: 164px;
+                background-color: #0075c2;
+                border-radius: 50%;
+                position: absolute;
+                top: -110px;
+                z-index: 100; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle1, .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle2, .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle3 {
+              position: absolute;
+              top: -18px;
+              left: -53px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle1 img, .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle2 img, .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle3 img {
+                display: block; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle2 {
+              top: -35px;
+              left: -57px; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizHead .quizTitle3 {
+              top: -42px;
+              left: -65px; }
+          .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt {
+            display: flex;
+            flex-flow: column;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            height: 437px;
+            position: relative; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .mt30 {
+              margin-top: 30px; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .mt20 {
+              margin-top: 20px; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .hintArea {
+              width: 236px;
+              height: 224px;
+              position: absolute;
+              bottom: -79px;
+              left: 0px;
+              z-index: 100; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .hintArea a {
+                width: 236px;
+                height: 224px;
+                display: block;
+                cursor: pointer; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .hintArea a img {
+                  width: 236px;
+                  height: 224px;
+                  display: block; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea {
+              width: 218px;
+              height: 118px;
+              position: absolute;
+              z-index: 100;
+              right: 0px;
+              bottom: 0px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-end;
+                width: 218px;
+                height: 118px;
+                background-image: url(../img/quizBtnBack.png);
+                background-size: 218px;
+                background-position: center;
+                background-repeat: no-repeat; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .prevBtn {
+                  display: block;
+                  width: 103px;
+                  height: 56px;
+                  margin-bottom: 3px;
+                  background-image: url(../img/quizBtnObject.png);
+                  background-size: 218px;
+                  background-position: left bottom -3px;
+                  background-repeat: no-repeat; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .prevBtn a {
+                    display: block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .nonePrevBtn {
+                  display: block;
+                  width: 103px;
+                  height: 56px;
+                  margin-bottom: 3px;
+                  background-image: url(../img/quizBtnObject.png);
+                  background-size: 218px;
+                  background-position: left top 0;
+                  background-repeat: no-repeat; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .nonePrevBtn a {
+                    display: block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .nonePrevBtn a {
+                    display: none; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .nextBtn {
+                  display: block;
+                  width: 103px;
+                  height: 56px;
+                  margin-bottom: 3px;
+                  background-image: url(../img/quizBtnObject.png);
+                  background-size: 218px;
+                  background-position: right bottom -3px;
+                  background-repeat: no-repeat; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .nextBtn a {
+                    display: block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .noneNextBtn {
+                  display: block;
+                  width: 103px;
+                  height: 56px;
+                  margin-bottom: 3px;
+                  background-image: url(../img/quizBtnObject.png);
+                  background-size: 218px;
+                  background-position: right top 0;
+                  background-repeat: no-repeat; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .noneNextBtn a {
+                    display: block;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .nextArea .btnArea .noneNextBtn a {
+                    display: none; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .problemTxt {
+              text-align: center;
+              word-break: keep-all;
+              margin-top: 10px;
+              font-size: 1.875rem;
+              line-height: 1.4em;
+              color: #f0830a; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub1 {
+              width: 612px;
+              height: 100px;
+              border-right: 2px solid #0075c2;
+              border-top: 2px solid #0075c2;
+              border-bottom: 2px solid #0075c2;
+              margin-top: 34px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub1 .aCannes {
+                border-left: 2px solid #0075c2;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                color: #f0830a;
+                font-size: 3rem;
+                float: left; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub12 {
+              width: 408px;
+              height: 100px;
+              border-right: 2px solid #0075c2;
+              border-top: 2px solid #0075c2;
+              border-bottom: 2px solid #0075c2;
+              margin-top: 34px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub12 .aCannes {
+                border-left: 2px solid #0075c2;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                color: #f0830a;
+                font-size: 3rem;
+                float: left; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub13 {
+              display: flex;
+              justify-content: space-around;
+              width: 488px;
+              height: 100px;
+              margin-top: 34px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .proSub13 .aCannes {
+                border: 2px solid #0075c2;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                color: #f0830a;
+                font-size: 3rem;
+                border-radius: 50%; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput {
+              display: flex;
+              justify-content: center;
+              width: 100%; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .mt30 {
+                margin-top: 30px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .mt20 {
+                margin-top: 20px; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea {
+                width: 450px;
+                margin-top: 43px; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea .divInput {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 80px;
+                  box-sizing: border-box;
+                  border: 1px solid #0075c2;
+                  font-size: 1.875rem; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea .divInput .typeText {
+                    width: 373px;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 80px; }
+                    .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea .divInput .typeText input[type=text] {
+                      width: 90%;
+                      height: 90%;
+                      border: none;
+                      outline: none;
+                      font-size: 1.875rem;
+                      text-align: center;
+                      color: #333; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea .divInput .typeBtn {
+                    width: 75px;
+                    height: 100%;
+                    background-color: #0075c2;
+                    color: white;
+                    text-align: center;
+                    line-height: 80px; }
+                    .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .formInput .inputArea .divInput .typeBtn .answerCheck {
+                      width: 100%;
+                      height: 100%;
+                      cursor: pointer;
+                      font-size: 1.875rem;
+                      outline: none;
+                      background-color: transparent;
+                      color: #fff;
+                      border: none;
+                      outline: none; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm {
+              width: 100%;
+              height: 346px;
+              position: absolute;
+              bottom: -15px;
+              left: 0px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn {
+                display: flex;
+                justify-content: center;
+                flex-flow: row wrap;
+                width: 400px;
+                height: 336px;
+                margin-bottom: 10px; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn .oBtn {
+                  width: 200px;
+                  height: 303px;
+                  cursor: pointer;
+                  transition: all 0.1s;
+                  background-image: url(../img/quizSection203.png);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: contain; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn .xBtn {
+                  width: 200px;
+                  height: 303px;
+                  cursor: pointer;
+                  transition: all 0.2s;
+                  background-image: url(../img/quizSection204.png);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: contain; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn .xBtn:hover {
+                  background-image: url(../img/quizSection201.png); }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn .oBtn:hover {
+                  background-image: url(../img/quizSection202.png); }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .oxBtnForm .oxBtn p {
+                  width: 100%;
+                  text-align: center;
+                  color: #b2b2b2;
+                  font-family: "S-CoreDream-4Regular";
+                  font-weight: 700;
+                  margin-top: 10px; }
+            .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm {
+              display: flex;
+              flex-flow: column;
+              align-items: center;
+              width: 100%; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 34px;
+                height: 119px;
+                width: 663px;
+                position: relative; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle .resetBtn {
+                  position: absolute;
+                  right: -120px;
+                  top: 50%;
+                  margin-top: -20px;
+                  width: 100px;
+                  height: 30px;
+                  background-color: #0075c2;
+                  color: white;
+                  border-radius: 45px;
+                  line-height: 30px;
+                  text-align: center;
+                  cursor: pointer;
+                  transition: background-color 0.2s; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle .resetBtn:active {
+                  background-color: #0d8bdf; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle .circle {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border: 4px solid #0075c2;
+                  width: 110px;
+                  height: 110px;
+                  box-sizing: border-box;
+                  border-radius: 50%;
+                  overflow: hidden; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle .arrowImg {
+                  display: flex;
+                  width: 38px;
+                  height: 111px; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .Allcircle .arrowImg img {
+                    width: 100%; }
+              .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox {
+                width: 492px;
+                height: 189px; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleTxt {
+                  display: flex;
+                  justify-content: center; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleTxt p {
+                    width: 67px;
+                    height: 1.5em;
+                    line-height: 1.5em;
+                    text-align: center;
+                    background-color: #0075c2;
+                    color: #fff;
+                    font-size: 1.3rem; }
+                .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleBorder {
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  height: 149px;
+                  border: 2px solid #0075c2;
+                  position: relative;
+                  z-index: 300; }
+                  .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleBorder .exampleObject {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: column;
+                    width: 160px;
+                    height: auto; }
+                    .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleBorder .exampleObject .exampleImgBox {
+                      display: flex;
+                      justify-content: center;
+                      align-content: center;
+                      overflow: hidden;
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                      border: 1px solid #e7e7e7; }
+                    .allArea .backgroundImg .contentCenter .quizBoxArea .quizBorder .quizTxt .imgArrForm .exampleBox .exampleBorder .exampleObject p {
+                      margin-top: 5px;
+                      color: #0075c2;
+                      text-align: center;
+                      font-size: 16px;
+                      font-family: 'S-CoreDream-4Regular';
+                      letter-spacing: -1.2px; }
+      .allArea .backgroundImg .contentCenter .backImg1 {
+        position: absolute;
+        right: -241px;
+        bottom: 100px;
+        width: 241px;
+        height: 171px; }
+        .allArea .backgroundImg .contentCenter .backImg1 img {
+          width: 241px;
+          height: 171px; }
+
+/*# sourceMappingURL=quiz_css1.css.map */

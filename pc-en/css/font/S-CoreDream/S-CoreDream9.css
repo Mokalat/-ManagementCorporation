@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('S-CoreDream-3Light.eot');
+  src: url('S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
+       url('S-CoreDream-3Light.svg#S-CoreDream-3Light') format('svg'),
+       url('S-CoreDream-3Light.ttf') format('truetype'),
+       url('S-CoreDream-3Light.woff') format('woff'),
+       url('S-CoreDream-3Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

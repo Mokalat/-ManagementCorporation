@@ -1,0 +1,73 @@
+/* 정답 박스 CSS */
+.quizAreaBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+
+}
+/* 이미지 영역 */
+.imgBoxArea {
+    position: relative;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+}
+/* position 영역 */
+.resultBoxArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    width: 82%;
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+}
+.imgBoxA {
+    width:auto;
+    height:auto;
+}
+.imgBoxA>img{
+    display: block;
+    width:100%;
+    height:auto;
+}
+/* 결과 박스 */
+.resultArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.resultExit{
+    position: absolute;
+    top:15.5%;
+    right:7.7%;
+    width:8.3%;
+}
+.resultExit>img{
+    width:100%;
+    cursor: pointer;
+}
+.imgBox {
+    width: 62%;
+}
+
+.imgBox>a {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+.imgBox>a>img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,45 @@
+.imgAnimate {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .imgAnimate .animateImg {
+    width: 620px;
+    height: 101px;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -361px;
+    z-index: 200; }
+    .imgAnimate .animateImg .moveImg {
+      width: 101px;
+      height: 101px;
+      position: absolute;
+      transition: all 1s;
+      left: 0;
+      opacity: 0; }
+      .imgAnimate .animateImg .moveImg img {
+        display: block;
+        width: 100%; }
+    .imgAnimate .animateImg .moveImg1, .imgAnimate .animateImg .moveImg2 {
+      width: 12px;
+      height: 100%;
+      margin: 0 12.5px;
+      background-image: url(../img/movingImg/moving1_5.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      transition: all 1s;
+      left: 0;
+      opacity: 0; }
+    .imgAnimate .animateImg .moveImg2 {
+      background-image: url(../img/movingImg/moving1_5.png); }
+  .imgAnimate .imgBack {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    z-index: 100; }
+
+/*# sourceMappingURL=imgAnimate.css.map */

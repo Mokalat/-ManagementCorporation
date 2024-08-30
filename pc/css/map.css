@@ -1,0 +1,344 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+
+/* 
+    font-family: 'S-CoreDream-5Medium'; //굵음
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'S-CoreDream-4Regular';
+}
+
+.allArea {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.positionContent {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+
+/* 배경 */
+.backImage {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    top: 50%;
+    margin-top: -540px;
+    margin-left: -960px;
+    width: 1920px;
+    height: 1080px;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+/* 배경 이동 */
+.backMove1 {
+    transform: scale(3) translate(73px, 6px);
+}
+
+.backMove2 {
+    transform: scale(3) translate(306px, 95px);
+}
+
+.backMove3 {
+    transform: scale(3.5) translate(468px, 21px);
+}
+
+.backMove4 {
+    transform: scale(3) translate(497px, -112px);
+}
+
+.backMove5 {
+    transform: scale(4) translate(74px, -211px);
+}
+
+.backMove6 {
+    transform: scale(4) translate(-84px, -80px);
+}
+
+.backMove7 {
+    transform: scale(3) translate(-291px, -149px);
+}
+
+.backMove8 {
+    transform: scale(3) translate(-310px, -304px);
+}
+
+.backMove9 {
+    transform: scale(3) translate(-633px, -364px);
+}
+
+/* 클릭 */
+.clickArea {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 1080px;
+    z-index: 100;
+}
+
+.clickArea .clickBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 0;
+    outline: 0;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    /* border: 1px solid red; */
+
+    z-index: 300;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.clickArea .clickBtn1 {
+    margin-left: -155px;
+    margin-top: -84px;
+    width: 178px;
+    height: 110px;
+}
+
+.clickArea .clickBtn2 {
+    margin-left: -384px;
+    margin-top: -177px;
+    width: 178px;
+    height: 110px;
+}
+
+.clickArea .clickBtn3 {
+    margin-left: -582px;
+    margin-top: -139px;
+    width: 191px;
+    height: 139px;
+}
+
+.clickArea .clickBtn4 {
+    margin-left: -582px;
+    margin-top: +14px;
+    width: 178px;
+    height: 110px;
+}
+
+.clickArea .clickBtn5 {
+    margin-left: -213px;
+    margin-top: +93px;
+    width: 166px;
+    height: 142px;
+}
+
+.clickArea .clickBtn6 {
+    margin-left: +60px;
+    margin-top: -22px;
+    width: 125px;
+    height: 134px;
+}
+
+.clickArea .clickBtn7 {
+    margin-left: +194px;
+    margin-top: +55px;
+    width: 203px;
+    height: 126px;
+}
+
+.clickArea .clickBtn8 {
+    margin-left: +260px;
+    margin-top: +206px;
+    width: 120px;
+    height: 158px;
+}
+
+.clickArea .clickBtn9 {
+    margin-left: +577px;
+    margin-top: +285px;
+    width: 178px;
+    height: 110px;
+}
+
+.clickArea .clickBtn:hover {
+    cursor: pointer;
+    /* border: 1px solid rgb(122, 122, 122); */
+
+}
+
+.onloadImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: all 0.4s;
+    opacity: 1;
+}
+.onloadImg p{
+    font-size: 50px;
+    text-align: center;
+}
+.blackPage {
+    visibility: hidden;
+    display: flex;
+    /*flex;*/
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    z-index: 600;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.contentArea {
+    width: 700px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.514);
+    color:white;
+    border: 2px solid rgb(206, 206, 206);
+    opacity: 0;
+    margin-top:50px;
+    transition: all 0.8s ease;
+}
+
+.exitRow {
+    width: 100%;
+    height: 80px;
+    margin-top:-80px;
+}
+
+.exitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.exitBar {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.exitBar:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.windowArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    padding:20px;
+}
+.windowContent{
+    width:100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* background-color: teal; */
+}
+.imagesArea{
+    width:100%;
+    height:100%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+.imagesBox{
+    width:100%;
+    height:100%;
+}
+.itemContent img{
+    display: block;
+    width:100%;
+}
+.txtArea{
+    display:flex;
+    width:100%;
+    margin-top:20px;
+}
+.leftCol{
+    width: calc(100% - 2px - 60px - 185px);
+    line-height: 27px;
+    font-size:0.9rem;
+    padding-right:30px;
+    margin-right:30px;
+    border-right:2px solid white;
+}
+.rightCol{
+    width: 185px;
+    font-size:0.9em;
+    line-height: 27px;
+    font-size:0.8rem;
+}
+.clickBtn{
+    
+    width:185px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top:30px;
+}
+.clickBtn a{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width:100%;
+    height:auto;
+}
+.clickBtn img{
+    width:50%;
+}
+.clickBtn p {
+    width:50%;
+    font-family: 'S-CoreDream-5Medium';
+    padding-bottom: 12px;
+    /* color: rgb(54,190,255); */
+    color: #ffd400;
+    text-decoration: none;
+}
+.windowTitleArea{
+    width:1920px;
+    height:1080px;
+    position:absolute;
+}
+.windowTitleArea .content1{
+    width: 500px;
+    height: auto;
+}
+
+.

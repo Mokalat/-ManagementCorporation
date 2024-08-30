@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('S-CoreDream-9Black.eot');
+  src: url('S-CoreDream-9Black.eot?#iefix') format('embedded-opentype'),
+       url('S-CoreDream-9Black.svg#S-CoreDream-9Black') format('svg'),
+       url('S-CoreDream-9Black.ttf') format('truetype'),
+       url('S-CoreDream-9Black.woff') format('woff'),
+       url('S-CoreDream-9Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

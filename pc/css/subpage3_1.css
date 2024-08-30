@@ -1,0 +1,40 @@
+.imga0:hover {
+    background-image: url(../img/hinbut-0.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga1:hover {
+    background-image: url(../img/hinbut-1.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga3:hover {
+    background-image: url(../img/hinbut-3.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga4:hover {
+    background-image: url(../img/hinbut-4.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+

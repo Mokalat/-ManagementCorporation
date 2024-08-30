@@ -1,0 +1,52 @@
+.imga1:hover {
+    background-image: url(../img/hinbut-1.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga2:hover {
+    background-image: url(../img/hinbut-2.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga3:hover {
+    background-image: url(../img/hinbut-3.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.imga4:hover {
+    background-image: url(../img/hinbut-4.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 177px;
+    margin-top: -10px;
+
+}
+
+.sub-1-2:hover {
+    background-image: url(../img/sub-1-1_1.svg);
+    z-index: 10;
+}
+
+.sub-1-3:hover {
+    background-image: url(../img/sub-1-2_1.svg);
+    z-index: 10;
+}
+.br{
+    border-radius: 20px;
+}

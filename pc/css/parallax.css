@@ -1,0 +1,297 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+@import url(./font/Jalnan.css);
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'S-CoreDream-4Regular'; }
+
+html,
+body {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%; }
+
+.parallaxPage {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 2000; }
+  .parallaxPage .parallaxArea {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+    background-color: white;
+    z-index: 100; }
+    .parallaxPage .parallaxArea .exitArea {
+      width: 100%;
+      height: 80px;
+      margin-top: -80px; }
+      .parallaxPage .parallaxArea .exitArea .exitBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        float: right;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative; }
+        .parallaxPage .parallaxArea .exitArea .exitBtn .exitBtnArea {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          top: 0px;
+          left: 0px; }
+        .parallaxPage .parallaxArea .exitArea .exitBtn .exitBar {
+          position: absolute;
+          z-index: 1;
+          width: 50px;
+          height: 4px;
+          transform: rotate(45deg);
+          background-color: white; }
+        .parallaxPage .parallaxArea .exitArea .exitBtn .exitBar:nth-child(2) {
+          transform: rotate(-45deg); }
+    .parallaxPage .parallaxArea .scrollBtnArea {
+      display: flex;
+      flex-flow: column;
+      width: 200px;
+      height: 500px;
+      position: absolute;
+      right: -200px;
+      top: 0px; }
+      .parallaxPage .parallaxArea .scrollBtnArea .btnArea {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+        margin: 20px 0; }
+        .parallaxPage .parallaxArea .scrollBtnArea .btnArea .scrollBtn {
+          width: 20px;
+          height: 20px;
+          background-color: rgba(255, 255, 255, 0.534);
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          margin-left: 20px;
+          transition: background-color .5s;
+          cursor: pointer; }
+        .parallaxPage .parallaxArea .scrollBtnArea .btnArea .titleArea {
+          padding-left: 10px;
+          width: 0px;
+          overflow: hidden;
+          transition: width .5s; }
+          .parallaxPage .parallaxArea .scrollBtnArea .btnArea .titleArea .scrollTitle {
+            width: 150px;
+            color: white; }
+      .parallaxPage .parallaxArea .scrollBtnArea .btnArea:hover .scrollBtn {
+        background-color: white; }
+      .parallaxPage .parallaxArea .scrollBtnArea .btnArea:hover .titleArea {
+        width: 150px; }
+    .parallaxPage .parallaxArea .parallaxScroll {
+      width: 1000px;
+      height: 500px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: relative;
+      scroll-behavior: smooth; }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne {
+        position: absolute;
+        width: 1000px;
+        height: 500px;
+        overflow: hidden; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne .moveBasic {
+          position: absolute;
+          width: 1000px;
+          height: 500px;
+          top: 0px;
+          left: 0px;
+          z-index: 10;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne .itemFixed {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          z-index: 100;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne .imgBox {
+          width: 1000px;
+          height: 100%;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: calc(50vw - 450px) center;
+          position: absolute;
+          left: 0px;
+          top: 0;
+          z-index: 50; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne .txtBox {
+          color: white;
+          width: 359px;
+          height: 150px;
+          position: absolute;
+          right: 0px;
+          top: 250px;
+          margin-top: -75px;
+          z-index: 50; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne .txtBox h5 {
+            margin: 10px 0;
+            font-size: 1.75rem; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne .txtBox p {
+            font-size: 1.5rem; }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) {
+        background-color: #c46c2d;
+        top: 0; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .txtArea {
+          width: 100%;
+          height: 168px;
+          margin-top: 110px; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .txtArea h2 {
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            font-family: "Jalnan"; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .txtArea h1 {
+            font-size: 45px;
+            text-align: center;
+            color: white;
+            margin-top: 5px;
+            font-family: "Jalnan"; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .txtArea p {
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            margin-top: 20px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .imgArea {
+          height: 196px;
+          width: 100%; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .imgArea .item1 {
+            width: 100%;
+            height: 89px;
+            background-image: url(../img/parallax/item1_1.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(1) .imgArea .underIcon {
+            margin-top: 95px;
+            width: 100%;
+            height: 12px;
+            background-image: url(../img/parallax/item1_2.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(2) {
+        background-color: #333333;
+        top: 500px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(2) .imgBox {
+          background-image: url(../img/parallax/imgBox0.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(2) .moveBasic {
+          background-image: url(../img/parallax/itemBack2_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(2) .itemFixed {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../img/parallax/item2_1.png); }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(3) {
+        background-color: #603814;
+        top: 1000px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(3) .imgBox {
+          background-image: url(../img/parallax/imgBox1.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(3) .moveBasic {
+          background-image: url(../img/parallax/itemBack3_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(3) .itemFixed {
+          background-image: url(../img/parallax/item3_1.png); }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(4) {
+        background-color: #764c24;
+        top: 1500px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(4) .imgBox {
+          background-image: url(../img/parallax/imgBox2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(4) .moveBasic {
+          background-image: url(../img/parallax/itemBack4_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(4) .moveBasic2 {
+          position: absolute;
+          width: 1000px;
+          height: 500px;
+          top: 0px;
+          left: 0px;
+          z-index: 15;
+          background-image: url(../img/parallax/itemBack4_3.png);
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: 40% center; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(4) .itemFixed {
+          background-image: url(../img/parallax/item4_1.png); }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(5) {
+        background-color: #c69c6c;
+        top: 2000px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(5) .imgBox {
+          background-image: url(../img/parallax/imgBox3.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(5) .moveBasic {
+          background-image: url(../img/parallax/itemBack5_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(5) .moveBasic2 {
+          position: absolute;
+          width: 1000px;
+          height: 500px;
+          top: 0px;
+          left: 0px;
+          z-index: 15;
+          background-image: url(../img/parallax/itemBack5_3.png);
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(5) .itemFixed {
+          background-image: url(../img/parallax/item5_1.png); }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(6) {
+        background-color: #fbb03b;
+        top: 2500px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(6) .imgBox {
+          background-image: url(../img/parallax/imgBox4.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(6) .moveBasic {
+          background-image: url(../img/parallax/itemBack6_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(6) .moveBasic2 {
+          position: absolute;
+          width: 1000px;
+          height: 500px;
+          top: 0px;
+          left: 0px;
+          z-index: 15;
+          background-image: url(../img/parallax/itemBack6_3.png);
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-position: center; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(6) .itemFixed {
+          background-image: url(../img/parallax/item6_1.png); }
+      .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(7) {
+        background-color: #3fbaff;
+        top: 3000px; }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(7) .imgBox {
+          background-image: url(../img/parallax/imgBox5.png);
+          background-position: calc(50vw - 450px) calc(50vh + 20px); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(7) .moveBasic {
+          background-image: url(../img/parallax/itemBack7_2.png); }
+        .parallaxPage .parallaxArea .parallaxScroll .parallaOne:nth-child(7) .itemFixed {
+          background-image: url(../img/parallax/item7_1.png); }
+
+/*# sourceMappingURL=parallax.css.map */

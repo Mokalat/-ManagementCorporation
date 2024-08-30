@@ -1,0 +1,539 @@
+@import url(./font/Jalnan.css);
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+
+* {
+    font-family: 'Jalnan';
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mt60{
+    margin-top: 60px;
+}
+.font15{
+    font-size: 15px;
+}
+.img100{
+    width: 100%;
+    height: auto;
+}
+
+.mr76{
+margin-right: 76px;    
+}
+header {
+    height: 94px;
+}
+.br{
+    border-radius: 20px;
+}
+#wrap{
+    background-image: url(../img/intro_button.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 92.6%;
+}
+
+#wrap>header {
+    margin-top: 30px;
+}
+
+#wrap1>header {
+    margin-top: 40px;
+}
+
+.log {
+    padding-left: 42px;
+    width: 276.5px;
+    height: auto;
+
+}
+
+.log>a {
+    display: block;
+    width: 276.5px;
+    height: 42px;
+}
+
+.ion {
+    display: flex;
+    position: relative;
+    left:70%;
+    top: 0;
+    width: 245px;
+    margin-top: -40px;
+}
+
+.ion>li {
+    float: left;
+    margin-right: 10px;
+}
+
+.ion>li>a {
+    display: block;
+    width: 39px;
+    height: 39px;
+}
+.ion>.english>a{
+    width: 67px;
+     display: block;
+     height: 25px;
+}
+.menu_in {
+    width:0%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    /* transition: all .5s ease; */
+    background-color: rgba(0, 0, 0, 0.486);
+    cursor: default;
+    z-index: 2;
+    
+}
+
+.menu_in_back {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    transition: all .5s ease;
+    background-color: #2a2a2a;
+    z-index: 2;
+    cursor: default;
+}
+
+
+.menu_btn {
+    margin-top: 7px;
+    margin-left: 10px;
+    width: 89px;
+    height: 21px;
+}
+
+.menu_btn:hover {
+    cursor: pointer;
+}
+
+.meun_close {
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/menu_close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    float: right;
+    transition: all 1.0s ease;
+}
+
+.meun_close:hover {
+    cursor: pointer;
+}
+
+
+
+
+.home {
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 39px;
+}
+
+.facebook {
+    background-image: url(../img/facebook.jpg);
+    background-repeat: no-repeat;
+  
+    height: 39px;
+}
+
+.youtube {
+    background-image: url(../img/youtube.jpg);
+    background-repeat: no-repeat;
+  
+    height: 39px;
+}
+
+.blog {
+    background-image: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+ 
+    height: 39px;
+}
+
+.post {
+    background-image: url(../img/post.jpg);
+    background-repeat: no-repeat;
+    height: 39px;
+}
+.english{
+    background-image: url(../img/english.jpg);
+    width: 67px;
+    height:25px;
+    margin-top: 6px;
+    opacity: 0.7;
+}
+
+section>.title>h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: rgb(44, 126, 234);
+}
+
+section>.title>p {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(128, 128, 128);
+}
+
+.section {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.section>nav{
+    display: flex;
+    justify-content: center;
+}
+
+.section>nav>img {
+
+    width: 1320px;
+}
+
+
+
+
+
+
+/* 버튼 해결시 높이조절 */
+.submenu {
+    position: absolute;
+    /* z-index: 10; */
+    margin-top: -161px;
+}
+
+.submenu>a {
+    display: block;
+    width: 245px;
+    height: auto;
+}
+
+/* 버튼 해결시 높이조절  */
+.event{
+    margin-top: -80px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.VR {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 324px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    background-color: rgb(44, 126, 234);
+    color: white;
+    padding-right: 15px;
+    font-size: 15.5px;
+    font-weight: 1000;
+}
+
+.VR>img {
+    position: absolute;
+    padding-top: 10px;
+    margin-left: -57px;
+}
+
+.PDF {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 324px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    background-color: rgb(245, 102, 97);
+    color: white;
+    padding-right: 15px;
+    margin-top: 10px;
+    font-size: 15.5px;
+    font-weight: 1000;
+}
+
+.PDF>img {
+    position: absolute;
+    padding-top: 7px;
+    margin-left: -32px;
+}
+
+.footer {
+    display: flex;
+    height: 70px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.footer>section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 27%; */
+    /* margin-top: -14px; */
+}
+
+.footerlog {
+    margin-top: -14px;
+}
+
+.footerlog>img {
+    padding-top: 35px;
+
+}
+
+.footer>section {
+    display: flex;
+    float: left;
+}
+
+.alltext {
+    padding-top: 16px;
+    letter-spacing: -0.5px;
+}
+
+.footertext {
+    font-family: "Noto Sans KR", sans-serif;
+    padding-left: 10px;
+    font-size: 9.878pt;
+    /* width: 100%; */
+}
+
+.menu_in_back>section>nav>div {
+    margin-bottom: 20px;
+}
+
+.menu_in_back>section>nav>div>h2,
+.menu_in_back>section>nav>div>a>h2 {
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 19px;
+    padding-bottom: 10px;
+    /* margin-bottom: 30px; */
+    width: 100%;
+    color: #49c8f5;
+    border-bottom: 1px solid white;
+}
+
+
+.menu_in_back>section>nav>div>a>p {
+    text-align: left;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+.meun_padding {
+    padding: 30px;
+    /* visibility:hidden; */
+}
+
+.menu_text {
+    margin-top: 100px;
+}
+
+
+.menu_in_back>.meun_padding>nav>div>a {
+    display: block;
+    width: 400px;
+}
+
+.menu_in_back>.meun_padding>nav>div>a:hover>h2 {
+    color: #3d89a4;
+}
+
+.menu_in_back>.meun_padding>nav>div>a:hover>p {
+    color: #9e9e9e;
+
+}
+
+.but {
+    display: flex;
+   justify-content: center;
+    margin-left: -8px;
+    margin-top: -347px;
+}
+.but-1 {
+    margin-left: -205px;
+}
+
+.but-2 {
+    margin-left: -205px;
+}
+
+.but-3 {
+    margin-left: -205px;
+}
+
+.but-4 {
+    margin-left: -205px;
+}
+
+.but-5 {
+    margin-left: -205px;
+}
+
+.but-1>a {
+    background-image: url(../img/but_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+.but-2>a {
+    background-image: url(../img/but_2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+.but-3>a {
+    background-image: url(../img/but_3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+
+.but-4>a {
+    background-image: url(../img/but_4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+
+.but-5>a {
+    background-image: url(../img/but_5.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+
+.but>li>a {
+    display: block;
+    width: 205px;
+    height: 331px;
+}
+
+.but>div {
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 206px;
+    height: 331px;
+    z-index: 100;
+    border-radius: 103px 104px 105px 102px ;
+    visibility: hidden;
+}
+/* 박스 */
+.but>.but-2-1 {
+    margin-left: 67px;
+}
+
+.but>.but-3-1 {
+    margin-left: 67px;
+}
+
+.but>.but-4-1 {
+    margin-left: 67px;
+}
+
+.but>.but-5-1 {
+    margin-left: 67px;
+}
+
+.but>.but-6-1 {
+    margin-left: 67px;
+}
+.but>div>a{
+    display: block;
+    width: 206px;
+    height: 331px;
+}
+/* 박스 */
+.section>.but>div>li>a {
+    display: block;
+    width: 205px;
+    height: 331px;
+}
+.Top {
+    background-color: rgb(80, 80, 80);
+    width: 53px;
+    height: 53px;
+    position: fixed;
+    bottom: 30px;
+    right: 50%;
+    margin-right: -760px;
+ background-image: url(../img/Top.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ border-radius: 20%;
+}
+.Top:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+
+@media(max-width:1550px) {
+
+    .Top {
+        width: 53px;
+        height: 53px;
+        position: fixed;
+        bottom: 30px;
+       left: 95%;
+    
+     
+    }
+}

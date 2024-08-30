@@ -1,0 +1,360 @@
+@import url(./font/Jalnan.css);
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+
+* {
+    font-family: 'Jalnan';
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.img100 {
+    width: 100%;
+    height: auto;
+}
+
+.mr76 {
+    margin-right: 76px;
+}
+
+header {
+    height: 94px;
+}
+
+#wrap {
+    background-image: url(../img/intro_button_1.jpg);
+    background-repeat: no-repeat;
+
+    background-position: center bottom;
+    overflow: hidden;
+    width: 100%;
+    height: 899px;
+  
+}
+
+#wrap>header {
+    margin-top: 30px;
+}
+
+#wrap1>header {
+    margin-top: 40px;
+}
+
+.log {
+    padding-left: 42px;
+    width: 276.5px;
+    height: auto;
+
+}
+
+.log>a {
+    display: block;
+    width: 276.5px;
+    height: 42px;
+}
+
+.ion {
+    display: flex;
+    position: relative;
+    left: 75%;
+    top: 0;
+    width: 245px;
+    margin-top: -40px;
+}
+
+.ion>li {
+    float: left;
+    margin-right: 10px;
+}
+
+.ion>li>a {
+    display: block;
+    width: 39px;
+    height: 39px;
+}
+
+.menu_in {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    /* transition: all .5s ease; */
+    background-color: rgba(0, 0, 0, 0.486);
+    cursor: default;
+    z-index: 2;
+
+}
+
+.menu_in_back {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    right: 0px;
+    transition: all .5s ease;
+    background-color: #2a2a2a;
+    z-index: 2;
+    cursor: default;
+}
+
+
+.menu_btn {
+    margin-top: 7px;
+    margin-left: 10px;
+    width: 89px;
+    height: 21px;
+}
+
+.menu_btn:hover {
+    cursor: pointer;
+}
+
+.meun_close {
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/menu_close.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    float: right;
+    transition: all 1.0s ease;
+}
+
+.meun_close:hover {
+    cursor: pointer;
+}
+
+
+
+
+.home {
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 39px;
+}
+
+.facebook {
+    background-image: url(../img/facebook.jpg);
+    background-repeat: no-repeat;
+
+    height: 39px;
+}
+
+.youtube {
+    background-image: url(../img/youtube.jpg);
+    background-repeat: no-repeat;
+
+    height: 39px;
+}
+
+.blog {
+    background-image: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+
+    height: 39px;
+}
+
+.post {
+    background-image: url(../img/post.jpg);
+    background-repeat: no-repeat;
+
+    height: 39px;
+}
+.title{
+    margin-top: 105px;
+}
+section>.title>h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: rgb(44, 126, 234);
+    font-family: 'Jalnan';
+}
+
+section>.title>p {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(128, 128, 128);
+}
+
+.section {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
+.section>nav>img {
+
+    width: 1320px;
+}
+
+.footer {
+    display: flex;
+    height: 70px;
+    line-height: 20px;
+    width: 100%;
+
+}
+
+.footer>section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerlog {
+    margin-top: -14px;
+}
+
+.footerlog>img {
+    padding-top: 35px;
+
+}
+
+.footer>section {
+    display: flex;
+    float: left;
+}
+
+.alltext {
+    padding-top: 16px;
+    letter-spacing: -0.5px;
+}
+
+.footertext {
+    font-family: "Noto Sans KR", sans-serif;
+    padding-left: 10px;
+    font-size: 9.878pt;
+
+}
+
+
+#wrap>section{
+    width: 1000px;
+    margin: 0 auto;
+}
+.video{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 110px;
+    width: 780px;
+    height: 438px; 
+    overflow: hidden;
+}
+
+.moveVideo{
+    position: absolute;
+}
+
+.accordion{
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: 417px;
+    margin-top: -438px;
+}
+.accordion>li{
+    position: relative;
+    width: 200px;
+}
+.accordion>li::before{
+    display: inline-block;
+}
+#hover_2,
+#hover_3,
+#hover_4
+{
+    height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+#hover_1{
+    overflow: hidden;
+    height: 130px;
+    padding-top: 10px;
+    transition: all 0.8s ease ; 
+} 
+.accordion>li>a{
+    display: block;
+    width: 189px;
+    height: 35px;  
+}
+.accordion>li>a>p{
+    width: 189px;
+    height: 35px;  
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Univers';
+}
+.blue{
+    background-color: rgb(0, 160, 233);
+}
+.green{
+background-color: rgb(171,205, 3);
+}
+.img{
+    display: flex;
+    justify-content: center;
+    width: 189px;
+}
+.videoBox{
+    padding-top: 10px;
+    width: 189px;
+    background-color: #000;
+}
+.videoBox>p{
+    padding: 0 0  10px 0;
+    color: #ffff; 
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Univers';
+}

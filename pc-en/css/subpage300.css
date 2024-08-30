@@ -1,0 +1,406 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+@import url(./font/Jalnan.css);
+@import url(./font/Helvetica-Condensed-Black-Se.css);
+
+.full {
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+.Txt {
+
+  width: 100%;
+  background-color: rgb(140, 198, 63);
+  margin-top: 94px;
+  height: 160px;
+}
+
+.Txt>nav>h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91px;
+  font-family: 'Jalnan';
+  font-size: 3.2rem;
+  color: #ffff;
+}
+
+.Txt>nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+
+
+/* 1번 */
+
+.subpage3>a {
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+ 
+}
+.subpage3{
+  background-image: url(../img/subpage3_1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+
+
+.subpage3-1{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -580.5px;
+}
+
+
+/* 2번 */
+
+.subpage3_2{
+  background-image: url(../img/subpage3_2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_2>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+.subpage3-2{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -551.5px;
+}
+
+/* 3번 */
+
+.subpage3_3{
+  background-image: url(../img/subpage3_3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_3>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+
+.subpage3-3{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -596.5px;
+}
+
+
+/* 4번 */
+
+.subpage3_4{
+  background-image: url(../img/subpage3_4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_4>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+
+.subpage3-4{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -542.5px;
+}
+/* 5번 */
+
+.subpage3_5{
+  background-image: url(../img/subpage3_5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_5>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+
+.subpage3-5{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -551.5px;
+}
+
+
+/* 6번 */
+
+.subpage3_6{
+  background-image: url(../img/subpage3_6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_6>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+
+.subpage3-6{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -586.5px;
+}
+
+/* 7번 */
+.subpage3_7{
+  background-image: url(../img/subpage3_7.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.subpage3_7>a{
+  display: block;
+  width: 100%;
+  height: 600px;
+  cursor: default;
+}
+
+.subpage3-7{
+  display: block;
+  width: 1209px;
+  height:497px ;
+  position: absolute;
+  left: 50%;
+  margin-left: -612px;
+  margin-top: -500.5px;
+}
+
+/* 숫자 1번 */
+
+.memberCountCon01{
+  position:absolute;
+  margin-top: -146px;
+  color: white;
+  margin-left: 321px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+.memberCountCon01>sup{
+  font-size: 0.3em;
+font-family: 'Helvetica-Condensed-Black-Se';
+}
+.memberCountCon01>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+
+/* 숫자 2번 */
+
+
+.memberCountCon02 {
+  position:absolute;
+  margin-top: -330px;
+  color: white;
+  margin-left: 321px;
+  font-size: 6.7rem;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon02>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+/* 숫자 3번 */
+.memberCountCon03 {
+  position:absolute;
+  margin-top: -446px;
+  color: white;
+  margin-left: 322px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon03>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 숫자 4번 */
+
+.memberCountCon04 {
+  position:absolute;
+  margin-top: -520px;
+  color: white;
+  margin-left: 320px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon04>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 숫자 5번 */
+
+.memberCountCon05 {
+  position:absolute;
+  margin-top: -263px;
+  color: white;
+  margin-left: 320px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon05>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+
+/* 숫자 6번 */
+.memberCountCon06 {
+  position:absolute;
+  margin-top: -436px;
+  color: white;
+  margin-left: 321px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon06>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 7번 */
+.memberCountCon07 {
+  position:absolute;
+  margin-top: -374px;
+  color: white;
+  margin-left: 321px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon07>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 8번 */
+
+.memberCountCon08 {
+  position:absolute;
+  margin-top: -305px;
+  color: white;
+  margin-left: 319px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon08>small{
+  font-size: 0.7em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 9번 */
+.memberCountCon09 {
+  position:absolute;
+  margin-top: -435px;
+  color: white;
+  margin-left: 696px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+/* 10번 */
+.memberCountCon10{
+  position:absolute;
+  margin-top: -446px;
+  color: white;
+  margin-left: 447px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+
+.memberCountCon11{
+  position:absolute;
+  margin-top: -435px;
+  color: white;
+  margin-left: 447px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+/* 점01 */
+
+.memberCountConDot01 {
+  position:absolute;
+  margin-top: -446px;
+  color: white;
+  margin-left: 415px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}
+/* 점02 */
+.memberCountConDot02 {
+  position:absolute;
+  margin-top: -435px;
+  color: white;
+  margin-left: 414px;
+  font-size: 6em;
+  font-family: 'Helvetica-Condensed-Black-Se';
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('S-CoreDream-2ExtraLight.eot');
+  src: url('S-CoreDream-2ExtraLight.eot?#iefix') format('embedded-opentype'),
+       url('S-CoreDream-2ExtraLight.svg#S-CoreDream-2ExtraLight') format('svg'),
+       url('S-CoreDream-2ExtraLight.ttf') format('truetype'),
+       url('S-CoreDream-2ExtraLight.woff') format('woff'),
+       url('S-CoreDream-2ExtraLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초성 퀴즈 디자인 없음</title>
+    <style>
+        .nextBtn {
+            display: none;
+        }
+
+        .answerArea {
+            width: 838px;
+            height: 200px;
+        }
+
+        .anserImg {
+            width: 198px;
+            height: 198px;
+            float: left;
+            margin-left: 10px;
+            border: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .anserImg:nth-child(1) {
+            margin-left: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="allArea">
+        <ol>
+            <li>
+                <h5>매립지 내에서 발생하는 침출수, 음폐수 등을 발전용수, 조경용수, 일반용수 등으로 전량 자체순환 및 재이용하여 주변 지역 환경오염을 사전에 차단하는 시스템은?</h5>
+                <p>(띄어쓰기를 지켜주세요.)</p>
+                <p>ㅁㅂㄹ ㅅㅅㅌ</p>
+                <div class="inputOut">
+                    <input type="text" id="inputTxt1">
+                </div>
+                <button id="txtBtn1">정답체크</button>
+                <div>
+                    정답 : <span id="txtResult1"></span>
+                </div>
+                <div>
+                    <button id="nextBtn1" class="nextBtn">다음으로</button>
+                </div>
+            </li>
+            <li>
+                <h5>매립가스 발전 과정의 순서를 맞춰주세요</h5>
+                <div class="answerArea">
+                    <div id="anserImg1" class="anserImg"></div>
+                    <div id="anserImg2" class="anserImg"></div>
+                    <div id="anserImg3" class="anserImg"></div>
+                    <div id="anserImg4" class="anserImg"></div>
+                </div>
+                <div class="answerArea">
+                    <div class="anserImg">
+                        <img id="exImg1" src="../img/movingImg/moving1_1.jpg" alt="" draggable="ture">
+                    </div>
+                    <div class="anserImg">
+                        <img id="exImg2" src="../img/movingImg/moving1_1.jpg" alt="" draggable="ture">
+                    </div>
+                    <div class="anserImg">
+                        <img id="exImg3" src="../img/movingImg/moving1_1.jpg" alt="" draggable="ture">
+                    </div>
+                    <div class="anserImg">
+                        <img id="exImg4" src="../img/movingImg/moving1_1.jpg" alt="" draggable="ture">
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <script>
+            function txtQuiz1() {
+                const txtBtn1 = document.getElementById("txtBtn1");
+
+                function section00Fun(e) {
+                    const inputTxt1 = document.getElementById("inputTxt1");
+                    const txtResult1 = document.getElementById("txtResult1");
+                    const nextBtn1 = document.getElementById("nextBtn1");
+                    const userA = inputTxt1.value;
+                    if (userA == "무방류 시스템") {
+                        txtResult1.innerText = "정답입니다.";
+                        nextBtn1.style.display = "block";
+                    } else {
+                        txtResult1.innerText = "오답입니다.";
+                        inputTxt1.value = "";
+                    }
+                } //초성 정답 확인 클릭
+                txtBtn1.addEventListener("click", section00Fun); //초성 정답 확인 클릭
+
+            }
+            txtQuiz1();
+            function imgQuiz() {
+                function allowDrop(ev) {
+                    ev.preventDefault(); //이벤트 정지
+                }
+
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id); //데이터 저장
+                }
+
+                function drop(ev) {
+                    ev.preventDefault(); //고유 기능 정지
+                    var data = ev.dataTransfer.getData("text"); // 데이터 가져오기
+                    ev.target.appendChild(document.getElementById(data)); //추가 시키기
+                }
+                const blankArea = document.getElementById("anserImg1");
+                blankArea.addEventListener("drop", drop);
+                blankArea.addEventListener("dragover", allowDrop);
+
+                const drogImg1 = document.getElementById("exImg1");
+                drogImg1.addEventListener("dragstart", drag);
+            }
+            imgQuiz();
+        </script>
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	  <meta property="og:image"         content="KakaoTalk.jpg"/>
+	<title>Sudokwon Landfill Site</title>
+	<link rel="stylesheet" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/owl.theme.default.css">
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/menu_mobile.js"></script>
+	<link rel="stylesheet" href="./css/map_menu.css">
+	<script type="text/javascript">
+		var UserAgent = navigator.userAgent;
+	if (UserAgent.match(
+				/iPhone|ipad|Android|Tablet|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i
+				) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+		  
+		}else{
+	  location.href = "../pc-en/map/map.html"; 
+	}
+	</script>
+	<style type="text/css">
+		body {
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+		}
+
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: auto;
+		}
+
+		.imgCollage {
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.dc {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+
+		}
+
+		.header1 {
+			width: 53%;
+			height: auto;
+		}
+
+		.header2 {
+			width: 28%;
+			height: auto;
+		}
+
+		.header3 {
+			width: 19%;
+			height: auto;
+		}
+
+		.test1 {
+			width: 12%;
+			height: auto;
+		}
+
+		.w10 {
+			width: 10%;
+			height: auto;
+		}
+
+		.allArea {
+			width: 100%;
+			height: auto;
+		}
+
+		.imgArea {
+			width: 100%;
+			/* height: 1658px; */
+			/* background-color: rgb(41, 88, 34); */
+		}
+
+		.imgWindow {
+			width: 100%;
+			height: 100%;
+			/* overflow: auto; */
+			overflow-x: scroll;
+			position: relative;
+			/* background-color: rgb(22, 22, 22); */
+		}
+
+		.imgBack {
+			width: auto;
+			height: 100%;
+			position: absolute;
+			background-color: rgb(233, 233, 233);
+		}
+
+		.imgBack>img {
+			height: 100%;
+			display: block;
+			/* background-color: rgb(240, 127, 255); */
+		}
+
+		.imgBox {
+			width: 100%;
+		}
+
+		.imgBox>img {
+			width: 100%;
+		}
+
+		.cilckArea {
+			position: absolute;
+			/* background-color: rgba(127, 255, 212, 0.253); */
+			height:100%;
+			z-index: 10;
+		}
+
+		.clickBtn1,
+		.clickBtn2,
+		.clickBtn3,
+		.clickBtn4,
+		.clickBtn5,
+		.clickBtn6,
+		.clickBtn7,
+		.clickBtn8 {
+			cursor: pointer;
+			/* background-color: rgba(0, 255, 234, 0.76); */
+			position: absolute;
+			opacity: 0.5;
+		}
+
+		.selectLv0 {
+			position: absolute;
+			z-index: 100;
+			width: 100%;
+		}
+
+		.selectLv {
+			display: flex;
+			justify-content: center;
+			position: fixed;
+
+			z-index: 200;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 192, 203, 0);
+		}
+
+		.selectBoxArea {
+			width: 90%;
+			height: auto;
+			/* margin-top:20px; */
+			overflow: hidden;
+			border-radius: 20px 0px 20px 20px;
+			min-height: 10px;
+			/* background-color:palevioletred; */
+		}
+
+		.selectTitleBox {
+			display: flex;
+			align-items: stretch;
+			justify-content: center;
+			height: auto;
+			width: 100%;
+			background-color: rgba(255, 192, 203, 0);
+
+		}
+
+		.titleBox {
+			width: 90.5%;
+			background-color: #70947a;
+		}
+
+		.titleBox>img {
+			width: 100%;
+		}
+
+		.exitBtn {
+			width: 9.5%;
+			background-color: #000000;
+		}
+
+		.exitBtn>img {
+			width: 100%;
+		}
+
+		.imgSlideArea {
+			/* display: flex; */
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		.imgContentArea {
+			width: 100%;
+			overflow: hidden;
+			overflow-y: auto;
+			height: auto;
+			border-radius: 0px 0px 20px 20px;
+
+			/* min-height: 2px; */
+		}
+
+		.imgContentArea img {
+			width: 100%;
+		}
+
+		.itemArea {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			height: auto;
+		}
+
+		.itemCenter {
+			margin-top: 10px;
+			height: auto;
+			width: calc(100% - 20px);
+		}
+
+		.item {
+			width: 100%;
+			height: auto;
+		}
+
+		.item>img {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+
+		.selectLv {
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.1s;
+		}
+		/* .mapHeader{
+
+		}
+		.mapContent{
+
+		} */
+		.mapFooter{
+			width:100%;
+			height:auto;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 메뉴 -->
+	<div id = "menuArea" class="menuArea">
+		<div class="imgCollage dc">
+			<a href="../mo/index.html" class="disBlock menuHeadImg1">
+				<img src="./images/quiz_menu/quiz_menu_c2.png" class = "menuImgBox"/ >
+			</a>
+			<div class="menuHeadImg2">
+				<img src="./images/quiz_menu/quiz_menu_c1.png" class = "menuImgBox"/ >
+			</div>
+		</div>
+		<!-- 닫기 버튼 -->
+		<img id="menuClose" class="menuClose menuImgBox" src="./images/quiz_menu/quiz_menu_b2.png" alt="" class="menuImgBox"/ >
+		<a class="disBlock" href="business.html"><img src="./images/quiz_menu/quiz_menu_b3.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="business.html"><img src="./images/quiz_menu/quiz_menu_b4.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="business2.html"><img src="./images/quiz_menu/quiz_menu_b5.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="business4.html"><img src="./images/quiz_menu/quiz_menu_b7.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="business5.html"><img src="./images/quiz_menu/quiz_menu_b8.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="business3.html"><img src="./images/quiz_menu/quiz_menu_b6.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="map.html"><img src="./images/quiz_menu/quiz_menu_b9.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="movie.html"><img src="./images/quiz_menu/quiz_menu_b10.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="number.html"><img src="./images/quiz_menu/quiz_menu_b11.png" alt="" class="menuImgBox"/ ></a>
+		<a class="disBlock" href="quiz.html"><img src="./images/quiz_menu/quiz_menu_b12.png" alt="" class="menuImgBox"/ ></a>
+		<img src="./images/quiz_menu/quiz_menu_b13.png" alt="" class="menuImgBox"/ >
+		<a class="disBlock" href="http://vr.slc.or.kr/"><img src="./images/quiz_menu/quiz_menu_b14.png" alt="" class="menuImgBox"/ ></a>
+		<img src="./images/quiz_menu/quiz_menu_b15.png" alt="" class="menuImgBox"/ >
+	</div>
+	<div class="allArea">
+		<!-- 야생화 단지 -->
+		<div id="selectLv8" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/flower_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea8" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section9_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section9_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section9_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section9_4.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section9_5.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/flower_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 드림파크cc -->
+		<div id="selectLv7" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/dreampark_cc_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea7" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section7_1.jpg" alt=""></div>
+							<!-- <div class="item"><img src="./images/map/section7_2.jpg" alt=""></div> -->
+							<div class="item"><img src="./images/map/section7_3.jpg" alt=""></div>
+							<!-- <div class="item"><img src="./images/map/section7_4.jpg" alt=""></div> -->
+							<div class="item"><img src="./images/map/section7_5.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/dreampark_cc_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 매립가스 -->
+		<div id="selectLv6" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/gas_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea6" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section6_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section6_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section6_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section6_4.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section6_5.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/gas_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 침출수 -->
+		<div id="selectLv5" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/water_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea5" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section5_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section5_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section5_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section5_4.jpg" alt=""></div>
+							<!-- <div class="item"><img src="./images/map/section5_5.jpg" alt=""></div> -->
+							
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/water_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 제2매립장 -->
+		<div id="selectLv4" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/no2_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea4" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section1_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section1_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section1_3.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/no2_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 통합계량대 -->
+		<div id="selectLv3" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/total_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea3" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section4_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section4_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section4_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section4_4.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section4_5.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/total_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 제3-1매립장 -->
+		<div id="selectLv2" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/no3-1_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea2" class="imgSlideArea owl-carousel owl-theme">
+							<div class="item"><img src="./images/map/section2_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section2_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section2_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section2_4.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section2_5.jpg" alt=""></div>
+
+							
+
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/no3-1_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 폐자원 에너지 타운 -->
+		<div id="selectLv1" class="selectLv">
+			<div id="selectBoxArea" class="selectBoxArea">
+				<div class="selectTitleBox">
+					<div class="titleBox">
+						<!-- id -->
+						<img id="clickTitle" src="./map_img/energy_title.png" alt="">
+					</div>
+					<div id="exitBtn" class="exitBtn">
+						<img src="./map_img/crose.png" alt="">
+					</div>
+				</div>
+				<div class="itemArea">
+					<div class="itemCenter">
+						<div id="imgSlideArea1" class="imgSlideArea owl-carousel owl-theme">
+							
+							<div class="item"><img src="./images/map/section3_1.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_2.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_3.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_4.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_5.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_6.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_7.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_8.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_9.jpg" alt=""></div>
+							<div class="item"><img src="./images/map/section3_10.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="imgContentArea">
+					<!-- id -->
+					<img id="clickExplanation" src="./map_img/energy_text.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 클릭영역 -->
+		<div id="selectLv0" class="selectLv0">
+			<div class="imgBox mapHeader" >
+				<!-- HEADER -->
+				<div class="imgCollage dc">
+					<a href="index.html" class="header1"><img src="./images/number_img/number_img_header1.jpg" width="100%" ></a>
+					<div class="header2"><img id="headerSize" src="./images/number_img/number_img_header2.jpg" width="100%" ></div>
+					<div class="header3"><img id="cilckMenu" class="cilckMenu" src="./images/number_img/number_img_header3.jpg" width="100%"></div>
+				</div>
+				
+				<img src="./images/map2.jpg" alt="">
+			</div>
+			<div id="imgArea" class="imgArea mapContent">
+				<div class="imgWindow">
+					<div id="cilckArea" class="cilckArea">
+						<div class="clickBtn1 clickBtn" id="clickBtn1"></div>
+						<div class="clickBtn2 clickBtn" id="clickBtn2"></div>
+						<div class="clickBtn3 clickBtn" id="clickBtn3"></div>
+						<div class="clickBtn4 clickBtn" id="clickBtn4"></div>
+						<div class="clickBtn5 clickBtn" id="clickBtn5"></div>
+						<div class="clickBtn6 clickBtn" id="clickBtn6"></div>
+						<div class="clickBtn7 clickBtn" id="clickBtn7"></div>
+						<div class="clickBtn8 clickBtn" id="clickBtn8"></div>
+					</div>
+					<div id="imgBack" class="imgBack">
+						<img src="./images/map1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="imgBox mapFooter">
+				<div class="imgCollage dc">
+					<a href="https://www.slc.or.kr/main.do" target="_blank" class="test1"><img
+							src="./images/intro12.jpg" width="100%"
+							height="auto"></a>
+					<a href="https://www.facebook.com/slcdream" target="_blank" class="test1"> <img
+							src="./images/intro13.jpg" width="100%"
+							height="auto"></a>
+					<a href="https://www.youtube.com/channel/UCVMVuH8-OLHjFx-uW_Po-RQ" target="_blank"
+						class="test1"><img src="./images/intro14.jpg" width="100%"
+							height="auto"></a>
+					<a href="https://blog.naver.com/slcdream" target="_blank" class="test1"><img
+							src="./images/intro15.jpg" width="100%"
+							height="auto"></a>
+					<a href="https://www.instagram.com/slcdream/" target="_blank" class="test1"><img
+							src="./images/intro16.jpg" width="100%"
+							height="auto"></a>
+				</div>
+				<img src="./images/intro17.jpg" style="width:100%; height:auto;"
+					border="0" />
+				<img src="./images/intro18.jpg" style="width:100%; height:auto;"
+					border="0" />
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const clickAreaArr = [
+			["폐자원에너지 타운", 470, 424, 370, 255, "clickBtn1"],
+			["제 3-1 매립지", 864, 327, 370, 255, "clickBtn2"],
+			["통합 계량대 ", 469, 713, 370, 255, "clickBtn3"],
+			["제2매립장", 1350, 497, 370, 255, "clickBtn4"],
+			["침출수 처리장", 1200, 900, 370, 280, "clickBtn5"],
+			["매립가스 발전소", 1770, 650, 289, 302, "clickBtn6"],
+			["드림파크cc", 2100, 800, 370, 255, "clickBtn7"],
+			["야생화 단지", 2900, 1270, 370, 255, "clickBtn8"]
+		];
+
+
+		function sizeCol(size, windowSize) {
+			let resultSize = 0;
+			resultSize = size * 100 / windowSize;
+			return resultSize;
+		}
+
+		function clickSizeFun() {
+			const orginSizeX = 3418;
+			const orginSizeY = 1794;
+			
+			clickAreaArr.forEach(function (value, index) {
+				// let AreaName = value[0];//영역 이름
+				let AreaPointX = value[1]; //좌표x
+				let AreaPointY = value[2]; //좌표y
+				let AreaSizeX = value[3]; //영역x
+				let AreaSizeY = value[4]; //영역y
+				let AreaClassName = value[5]; //클래스 이름
+				let percentPointX = sizeCol(AreaPointX, orginSizeX);
+				let percentPointY = sizeCol(AreaPointY, orginSizeY);
+				let percentSizeX = sizeCol(AreaSizeX, orginSizeX);
+				let percentSizeY = sizeCol(AreaSizeY, orginSizeY);
+				let moveSize = document.getElementById(AreaClassName);
+				moveSize.style.width = percentSizeX + "%";
+				moveSize.style.height = percentSizeY + "%";
+				moveSize.style.top = percentPointY + "%";
+				moveSize.style.left = percentPointX + "%";
+			});
+		}//클릭 영역 설정
+		let contentIndex = 1;
+		function imgSlide() {
+			let imagesY = 0;
+			// const imgX = 1280;
+			const imgX = 1280;
+			// const imgY = 1658;
+			const imgY = 1658;
+			const imgArea = document.getElementById("imgArea");
+			const windowScreenX = window.innerWidth;
+			imagesY = windowScreenX * imgY / imgX;
+			imgArea.style.height = imagesY + "px";
+
+			const imgBack = document.getElementById("imgBack");
+			const cilckArea = document.getElementById("cilckArea");
+			let windowSizeY = imgBack.offsetHeight;
+			let windowSizeX = imgBack.offsetWidth;
+			cilckArea.style.width = 3418 * windowSizeY / 1794 +"px";
+			cilckArea.style.height = windowSizeY+"px";
+			clickSizeFun();
+
+			$(".selectBoxArea").css("margin-top", $(".header1").height() + "px");
+
+
+			// 컨텐츠 스크롤
+			const titleHeight = $(".selectTitleBox").height();
+			const slideHeight = $(".itemArea").height();
+			const marginTop = $(".header1").height();
+			const imgContentArea = titleHeight + slideHeight + (marginTop * 2);
+
+			$(".imgContentArea").css("max-height", "calc(100vh - " + imgContentArea + "px)");//컨텐츠 높이
+
+			const maxHeight = window.innerHeight - (marginTop * 2);
+			const clickContentSize = $("#selectLv"+contentIndex+" .imgContentArea").height();
+			const clickSize = titleHeight + slideHeight + clickContentSize;
+			let selectHeight = 0;
+			
+			selectHeight = clickSize == maxHeight? maxHeight : clickSize;
+			$(".selectBoxArea").css("max-height", selectHeight + "px");//라운드
+		};
+
+		window.addEventListener("resize", imgSlide);
+		clickAreaArr.forEach(function (value, index) {
+			const clickBtnId = document.getElementById(value[5]);
+			// clickBtnId.addEventListener("click", openBox);
+		});
+		function clickFun(e) {
+			
+			
+			const clickIndex = e.target.id[8];
+			contentIndex = clickIndex; //클릭 인덱스 설정
+
+			const owl = $('#imgSlideArea' + clickIndex);
+			owl.trigger('play.owl.autoplay', [2000]); //owl 오토
+
+			const titleHeight = $(".selectTitleBox").height();
+			const slideHeight = $(".itemArea").height();
+			const marginTop = $(".header1").height();
+			const imgContentArea = titleHeight + slideHeight + (marginTop * 2);
+
+			$(".imgContentArea").css("max-height", "calc(100vh - " + imgContentArea + "px)");//컨텐츠 높이
+
+			$("#selectLv" + clickIndex).css({
+				visibility: "visible",
+				opacity: 1,
+				transition: "opacity 0.1s"
+			});//상자 보이게
+
+			const maxHeight = window.innerHeight - (marginTop * 2);
+			const clickContentSize = $("#selectLv"+clickIndex+" .imgContentArea").height();
+			const clickSize = titleHeight + slideHeight + clickContentSize;
+			let selectHeight = 0;
+			selectHeight = clickSize == maxHeight? maxHeight : clickSize;
+			$(".selectBoxArea").css("max-height", selectHeight + "px");//라운드 높이
+		}
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: true,
+			items: 1,
+			autoplay: false,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: false
+		});
+
+		$(".clickBtn").on("click", clickFun);
+		$(".exitBtn").on("click", function (e) {
+			const clickIndex = e.target.parentNode.parentNode.parentNode.parentNode.id[8];
+			$("#selectLv" + clickIndex).css({
+				visibility: "hidden",
+				opacity: 0,
+				transition: "opacity 0s"
+			});
+			const owl = $('#imgSlideArea' + clickIndex);
+			owl.trigger('stop.owl.autoplay');
+		});
+		imgSlide();
+
+		window.addEventListener("load", function () {
+			$(".selectBoxArea").css("margin-top", $(".header1").height() + "px");
+		});
+	</script>
+</body>
+
+</html>

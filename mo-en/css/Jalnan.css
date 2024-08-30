@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Jalnan';
+  src: url(../font/Jalnan.eot);
+  src: url(../font/Jalnan.eot?#iefix) format('embedded-opentype'),
+       url(../font/Jalnan.otf) format('otf'),
+       url(../font/Jalnan.svg#Jalnan) format('svg'),
+       url(../font/Jalnan.ttf) format('truetype'),
+       url(../font/Jalnan.woff) format('woff'),
+       url(../font/Jalnan.woff2) format('woff2');
+}

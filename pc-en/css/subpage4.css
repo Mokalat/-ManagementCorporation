@@ -1,0 +1,450 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+
+.bag {
+  line-height: 1.9;
+  background-color: rgb(253, 235, 235);
+  margin-top: 165px;
+  width: 100%;
+  /* height: 100%; */
+}
+.img100{
+  width: 100%;
+}
+.imga2{
+    margin-top: -10px;
+}
+
+.bag1 {
+  background-color: rgb(215, 200, 200);
+  height: 100px;
+}
+
+.Allsection {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.outimg {
+  position: absolute;
+  display: flex;
+  margin-top: -176px;
+
+
+}
+
+.outimg>img {
+
+  height: auto;
+
+}
+
+.outbut {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  top: 0;
+  margin-top: 4.5px;
+  margin-left: -241px;
+  padding-bottom: 1px;
+}
+
+.outbut>.img1 {
+
+  position: relative;
+  margin-top: -10px;
+}
+
+.outbut>.nextbut {
+  position: absolute;
+  margin-left: -6.5px;
+  margin-top: -105px;
+}
+
+.outbut>.nextbut>a {
+  margin-left: 9px;
+}
+
+.hinbut {
+  position: absolute;
+  visibility: hidden;
+  margin-left: 1.5px;
+  margin-top: -114.3px;
+}
+
+.hinbut-1 {
+  margin-left: 0;
+}
+
+.hinbut>a {
+  float: left;
+  display: block;
+  width: 133px;
+  height: 177px;
+  margin-right: 9.5px;
+
+}
+
+.nextbut>a {
+  float: left;
+  display: block;
+  width: 133px;
+  height: 177px;
+}
+
+.sub-1 {
+  margin-top: 108px;
+  margin-left: 126px;
+}
+
+.sub-1>a {
+  float: left;
+  display: block;
+  width: 253px;
+  height: 36px;
+}
+
+.sub-1-hidden {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 0.5px;
+  margin-left: 126px;
+}
+
+.sub-1-hidden>a {
+  display: block;
+  float: left;
+  width: 253x;
+  height: 114px;
+}
+
+.title {
+  position: relative;
+  margin-top: 186px;
+}
+
+.section-body {
+  margin-top: 48px;
+}
+
+.bacW {
+  width: 100%;
+  height: 86px;
+  background-color: #ffff;
+  border: 1px solid rgb(239, 120, 122);
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.bacW>ul {
+  display: flex;
+  font-size: 15px;
+  margin-bottom: -10px;
+}
+
+.bacW>ul>li {
+  margin-left: 20px;
+
+}
+
+.textrigh {
+  text-align: right;
+}
+
+.articletitle {
+  font-size: 24px;
+  color: rgb(239, 120, 122);
+  font-family: 'S-CoreDream-8Heavy';
+}
+
+.articletitle1 {
+  font-size: 24px;
+  color: rgb(239, 120, 122);
+  font-family: 'S-CoreDream-7ExtraBold';
+}
+
+.articletitle2 {
+  font-family: 'S-CoreDream-8Heavy';
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgb(239, 120, 122);
+  width: 430px;
+  height: 51px;
+
+  border: 1px solid rgb(239, 120, 122);
+  box-sizing: border-box;
+}
+
+table,
+tbody,
+tr,
+td {
+  font-size: 15px;
+}
+
+td {
+  border: 1px solid black;
+
+  border-left: none;
+}
+
+.br {
+  border-right: none;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+
+}
+
+.trheader {
+  border-top: 3px solid black;
+}
+
+.city {
+  width: 110px;
+  height: 35px;
+}
+
+.city1 {
+  width: 390px;
+  height: 35px;
+}
+
+.city2 {
+  width: 120px;
+  height: 35px;
+}
+
+.city3 {
+  width: 380px;
+  height: 35px;
+}
+
+.h35 {
+  height: 35px;
+}
+
+.h110 {
+  height: 110px;
+
+}
+
+.float {
+  float: left;
+}
+.floatR{
+  float: right;
+}
+.floatR_1{
+  margin-top: -60px;
+}
+.float_sub4{
+ 
+    margin-top: 100px;
+}
+.w690{
+  width: 690px;
+}
+.textml {
+  margin-left: 19px;
+  margin-right: 270px;
+  margin-bottom: 20px;
+  color: rgb(239, 120, 122);
+  font-family: 'S-CoreDream-7ExtraBold';
+  font-size: 25px;
+}
+
+.textcolor {
+  color: rgb(239, 120, 122);
+  font-family: 'S-CoreDream-7ExtraBold';
+  font-size: 25px;
+}
+
+.textleft {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.borde {
+  /* background-color: #ffff; */
+  /* border: 1px solid rgb(239, 120, 122); */
+  width: 100%;
+}
+
+.pb {
+  padding-bottom: 80px;
+}
+
+.start {
+  font-size: 27px;
+  font-family: 'S-CoreDream-7ExtraBold';
+
+}
+
+.img4header {
+  font-size: 25px;
+  color: rgb(239, 120, 122);
+  font-family: 'S-CoreDream-8Heavy';
+}
+
+.mr20 {
+  margin-right: 26px;
+}
+
+.img4text {
+ 
+  margin-top: 15px;
+}
+
+.img4box {
+  width: 230px;
+
+}
+
+.img4box_1 {
+  position: relative;
+}
+
+.img4boxAll {
+  width: 100%;
+  height: 381px;
+}
+
+
+.bacW1 {
+  width: 979px;
+  /* height: 86px; */
+  background-color: #ffff;
+  border: 1px solid rgb(239, 120, 122);
+  text-align: center;
+  padding: 10px;
+}
+
+.bacW1>div {
+  font-size: 14px;
+}
+
+.bacW1>div>strong {
+  color: rgb(239, 120, 122);
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.bacW2 {
+  width: 979px;
+  /* height: 86px; */
+  background-color: #ffff;
+  border: 1px solid rgb(239, 120, 122);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.imga1 {
+  margin-top: -10px;
+}
+
+.sectionbody2{
+    display: flex;
+}
+
+.sectionbody2_1{
+    width: 500px; border-right: 1px solid black;
+}
+.sectionbody2_1>ol{
+  width: 460px;
+}
+
+.sectionbody2_2{
+    margin-left: 40px;
+    width: 460px;
+}
+.font7B{
+    font-family:'S-CoreDream-7ExtraBold' ;
+}
+.sectionbody3{
+    width: 462px;
+}
+.sectionbody3>ol>li,
+.sectionbody3>li{
+    margin-bottom: 110px;
+    height: 416px;
+}
+.sectionbody4{
+  width: 462px;
+}
+.sectionbody4>ol>li,
+.sectionbody4>li{
+    height: 446px;
+}
+
+.imga3 {
+  margin-top: -10px;
+}
+
+.imga1{
+  background-image: url(../img/nextbut-1.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 133px;
+  height: 114px;
+}
+
+
+.imga2{
+  background-image: url(../img/nextbut-2.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 133px;
+  height: 114px;
+  margin-top: -25px;
+}
+.imga3{
+  background-image: url(../img/hinbut-3.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 133px;
+  height: 114px;
+}
+.imga4{
+  background-image: url(../img/nextbut-4.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 133px;
+  height: 114px;
+}
+
+
+.imga0{
+  background-image: url(../img/nextbut-0.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 133px;
+  height: 114px;
+}
+
+.imga0,.imga1,.imga2,.imga4{
+  margin-top: -31px;
+}

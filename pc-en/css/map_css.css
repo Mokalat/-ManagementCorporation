@@ -1,0 +1,403 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+@import url(./font/Jalnan.css);
+/* 
+    font-family: 'S-CoreDream-4Regular';//1
+    font-family: 'S-CoreDream-5Medium';//2
+    font-family: 'S-CoreDream-6Bold';//3
+    font-family: 'S-CoreDream-7ExtraBold';//4
+    font-family: 'S-CoreDream-8Heavy';//5
+    font-family: 'S-CoreDream-9Black';//6
+    font-family: 'S-CoreDream-1Thin';//7
+    font-family: 'S-CoreDream-2ExtraLight';//8
+    font-family: 'S-CoreDream-3Light';//9
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'S-CoreDream-4Regular'; }
+
+html, body {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%; }
+
+header {
+  display: block;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  padding-top: 30px;
+  top: 0px;
+  left: 0px; }
+
+.allArea .positionContent {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin-top: 100px;
+  overflow: hidden; }
+  .allArea .positionContent .backImage {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top: 0px;
+    margin-left: -960px;
+    width: 1920px;
+    height: 900px;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    z-index: 1; }
+  .allArea .positionContent .backMove1 {
+    transform: scale(3) translate(73px, 86px); }
+  .allArea .positionContent .backMove2 {
+    transform: scale(3) translate(306px, 206px); }
+  .allArea .positionContent .backMove3 {
+    transform: scale(3.5) translate(468px, 117px); }
+  .allArea .positionContent .backMove4 {
+    transform: scale(3) translate(497px, -32px); }
+  .allArea .positionContent .backMove5 {
+    transform: scale(4) translate(117px, -108px); }
+  .allArea .positionContent .backMove6 {
+    transform: scale(4) translate(-84px, 7px); }
+  .allArea .positionContent .backMove7 {
+    transform: scale(3) translate(-291px, -79px); }
+  .allArea .positionContent .backMove8 {
+    transform: scale(3) translate(-310px, -220px); }
+  .allArea .positionContent .backMove9 {
+    transform: scale(3) translate(-633px, -288px); }
+  .allArea .positionContent .clickArea {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 735px;
+    z-index: 100; }
+    .allArea .positionContent .clickArea .clickBtn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border: 0;
+      outline: 0;
+      /* border-radius: 50%; */
+      background-color: transparent;
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: ease; }
+    .allArea .positionContent .clickArea .clickBtn1 {
+      margin-left: -155px;
+      margin-top: -84px;
+      width: 178px;
+      height: 110px; }
+    .allArea .positionContent .clickArea .clickBtn2 {
+      margin-left: -384px;
+      margin-top: -177px;
+      width: 178px;
+      height: 110px; }
+    .allArea .positionContent .clickArea .clickBtn3 {
+      margin-left: -582px;
+      margin-top: -139px;
+      width: 191px;
+      height: 139px; }
+    .allArea .positionContent .clickArea .clickBtn4 {
+      margin-left: -582px;
+      margin-top: +14px;
+      width: 178px;
+      height: 110px; }
+    .allArea .positionContent .clickArea .clickBtn5 {
+      margin-left: -213px;
+      margin-top: +93px;
+      width: 166px;
+      height: 142px; }
+    .allArea .positionContent .clickArea .clickBtn6 {
+      margin-left: +60px;
+      margin-top: -22px;
+      width: 125px;
+      height: 134px; }
+    .allArea .positionContent .clickArea .clickBtn7 {
+      margin-left: +194px;
+      margin-top: +55px;
+      width: 203px;
+      height: 126px; }
+    .allArea .positionContent .clickArea .clickBtn8 {
+      margin-left: +260px;
+      margin-top: +206px;
+      width: 120px;
+      height: 158px; }
+    .allArea .positionContent .clickArea .clickBtn9 {
+      margin-left: +577px;
+      margin-top: +285px;
+      width: 178px;
+      height: 110px; }
+    .allArea .positionContent .clickArea .clickBtn:hover {
+      cursor: pointer;
+      /* border: 1px solid rgb(122, 122, 122); */ }
+  .allArea .positionContent .windowTitleArea {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: 255px;
+    z-index: 200;
+    word-break: keep-all; }
+    .allArea .positionContent .windowTitleArea .content1 {
+      width: 400px;
+      height: auto;
+      transition: all 0.8s;
+      opacity: 1; }
+      .allArea .positionContent .windowTitleArea .content1 h2 {
+        font-family: "Jalnan";
+        text-align: center;
+        color: #00a29a;
+        font-size: 33px; }
+      .allArea .positionContent .windowTitleArea .content1 div {
+        margin-top: 10px; }
+        .allArea .positionContent .windowTitleArea .content1 div p {
+          font-size: 1rem;
+          color: #4d4d4d;
+          letter-spacing: 0.5px; }
+    .allArea .positionContent .windowTitleArea .content2 {
+      display: none;
+      width: 218px;
+      height: auto;
+      background-color: white;
+      padding: 20px 23px;
+      box-sizing: border-box; }
+      .allArea .positionContent .windowTitleArea .content2 h3 {
+        color: #36beff;
+        font-size: 1rem;
+        padding: 10px;
+        border-bottom: 2px solid #36beff;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px; }
+      .allArea .positionContent .windowTitleArea .content2 p {
+        color: #4d4d4d;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px; }
+      .allArea .positionContent .windowTitleArea .content2 button {
+        display: block;
+        font-size: 0.9rem;
+        color: #36beff;
+        border: 1px solid #36beff;
+        background-color: white;
+        padding: 0 8px;
+        font-size: 1rem;
+        margin: auto;
+        letter-spacing: 0.5px; }
+.allArea footer {
+  width: 100%;
+  height: 70px;
+  position: relative; }
+
+.blackPage {
+  visibility: hidden;
+  display: flex;
+  /*flex;*/
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 1200;
+  opacity: 0;
+  transition: all 0.8s ease; }
+  .blackPage .contentArea {
+    width: 750px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    border: 2px solid #cecece;
+    opacity: 0;
+    margin-top: 50px;
+    transition: all 0.8s ease; }
+    .blackPage .contentArea .exitRow {
+      width: 100%;
+      height: 80px;
+      margin-top: -80px; }
+      .blackPage .contentArea .exitRow .exitBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        float: right;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative; }
+        .blackPage .contentArea .exitRow .exitBtn .exitBtnArea {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          top: 0px;
+          left: 0px; }
+        .blackPage .contentArea .exitRow .exitBtn .exitBar {
+          position: absolute;
+          z-index: 1;
+          width: 50px;
+          height: 4px;
+          transform: rotate(45deg);
+          background-color: white; }
+        .blackPage .contentArea .exitRow .exitBtn .exitBar:nth-child(2) {
+          transform: rotate(-45deg); }
+    .blackPage .contentArea .windowTitleArea {
+      width: 100%;
+      height: 50px;
+      background-color: #70947a; }
+      .blackPage .contentArea .windowTitleArea h4 {
+        font-size: 25px;
+        line-height: 50px;
+        text-align: center; }
+    .blackPage .contentArea .windowArea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 20px; }
+      .blackPage .contentArea .windowArea .windowContent {
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
+        /* background-color: teal; */ }
+        .blackPage .contentArea .windowArea .windowContent .imagesArea {
+          width: 100%;
+          height: 100%;
+          letter-spacing: 1px;
+          line-height: 1.5em; }
+          .blackPage .contentArea .windowArea .windowContent .imagesArea .imagesBox {
+            width: 100%;
+            height: 100%; }
+            .blackPage .contentArea .windowArea .windowContent .imagesArea .imagesBox img {
+              display: block;
+              width: 100%; }
+        .blackPage .contentArea .windowArea .windowContent .txtArea {
+          display: flex;
+          width: 100%;
+          margin-top: 20px; }
+          .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol {
+            width: calc(100% - 2px - 60px - 230px);
+            line-height: 27px;
+            font-size: 0.9rem;
+            padding-right: 30px;
+            margin-right: 30px;
+            border-right: 2px solid white;
+            max-height: 243px;
+            overflow-y: auto; }
+            .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle {
+              width: 100%;
+              margin: 10px 0; }
+              .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody {
+                width: 100%; }
+                .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr {
+                  width: 100%; }
+                  .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr th, .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr td {
+                    width: calc(100% / 3);
+                    border-bottom: 1px solid white;
+                    border-right: 1px solid white;
+                    box-sizing: border-box;
+                    padding: 8px 10px; }
+                  .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr th:nth-last-child(1), .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr td:nth-last-child(1) {
+                    border-right: none; }
+                .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr:nth-child(1) th, .blackPage .contentArea .windowArea .windowContent .txtArea .leftCol .tableStyle tbody tr:nth-child(1) td {
+                  border-top: 1px solid white; }
+          .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol {
+            width: 230px;
+            font-size: 0.9em;
+            line-height: 27px;
+            font-size: 0.8rem;
+            max-height: 243px; }
+            .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol ul {
+              list-style: disc;
+              box-sizing: border-box;
+              padding-left: 1rem; }
+              .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol ul li {
+                list-style: disc; }
+            .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .clickBtn {
+              width: 230px;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              margin-top: 18px; }
+              .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .clickBtn a {
+                display: block;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                width: 100%;
+                height: 90px; }
+                .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .clickBtn a p {
+                  width: 50%;
+                  font-family: 'S-CoreDream-5Medium';
+                  padding-bottom: 12px;
+                  /* color: rgb(54,190,255); */
+                  color: #ffd400;
+                  text-decoration: none;
+                  margin-right: -30px; }
+                .blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .clickBtn a img {
+                  width: 90px;
+                  height: 90px; }
+
+.onloadImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  transition: all 0.4s;
+  opacity: 1; }
+
+.scrollLock {
+  overflow: hidden; }
+/* 추가 */
+.blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .move{
+  margin-top: -15px;
+  margin-left: 12px;
+}
+.blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .move1{
+  margin-left: 10px;
+  margin-top: -17px;
+}
+
+.blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .move2{
+  margin-top: -15px;
+}
+
+.blackPage .contentArea .windowArea .windowContent .txtArea .rightCol .move3{
+  margin-top: -10px;
+}
+
+.allArea .positionContent .windowTitleArea .content1 div p{
+  font-family: 'Univers';
+  width: 421px;
+}
+/*# sourceMappingURL=map_css.css.map */

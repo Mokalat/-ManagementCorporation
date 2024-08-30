@@ -1,0 +1,201 @@
+@import url(./font/S-CoreDream/S-CoreDream1.css);
+@import url(./font/S-CoreDream/S-CoreDream2.css);
+@import url(./font/S-CoreDream/S-CoreDream3.css);
+@import url(./font/S-CoreDream/S-CoreDream4.css);
+@import url(./font/S-CoreDream/S-CoreDream5.css);
+@import url(./font/S-CoreDream/S-CoreDream6.css);
+@import url(./font/S-CoreDream/S-CoreDream7.css);
+@import url(./font/S-CoreDream/S-CoreDream8.css);
+@import url(./font/S-CoreDream/S-CoreDream9.css);
+@import url(./font/Jalnan.css);
+.full {
+  width: 100%;
+  height: 4300px;
+  margin-top: 100px;
+  overflow: hidden;
+  background-color: #f4f7e4; }
+  .full .positionFull {
+    width: 100%;
+    height: 4300px;
+    background-color: #f4f7e4;
+    position: relative; }
+    .full .positionFull .backCenter {
+      position: absolute;
+      left: 50%;
+      margin-left: -500px;
+      width: 1000px;
+      height: auto;
+      z-index: 300; }
+      .full .positionFull .backCenter .backImg {
+        width: 1920px;
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+        overflow: hidden;
+        z-index: 10; }
+      .full .positionFull .backCenter .bag {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 50; }
+        .full .positionFull .backCenter .bag .Allsection {
+          height: 100%;
+          width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vTxt {
+            height: 295px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column; }
+            .full .positionFull .backCenter .bag .Allsection .vTxt h1 {
+              text-align: center;
+              font-size: 3.2rem;
+              font-weight: 800;
+              color: #2c7eea;
+              font-family: 'Jalnan'; }
+            .full .positionFull .backCenter .bag .Allsection .vTxt p {
+              font-family: "Noto Sans KR", sans-serif;
+              text-align: center;
+              word-break: keep-all;
+              font-weight: 500;
+              margin-top: 10px;
+              color: gray; }
+          .full .positionFull .backCenter .bag .Allsection .vMove1 {
+            width: 100%;
+            height: 509px;
+            margin-top: 64px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove1 .v1 {
+              width: 555px;
+              height: 421px;
+              position: absolute;
+              left: 50%;
+              margin-left: -155px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -210px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove1 .v1 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove2 {
+            width: 100%;
+            height: 508px;
+            margin-top: 64px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove2 .v2 {
+              width: 641px;
+              height: 433px;
+              position: absolute;
+              left: 50%;
+              margin-left: -463px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -216px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove2 .v2 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove3 {
+            width: 100%;
+            height: 509px;
+            margin-top: 60px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove3 .v3 {
+              width: 613px;
+              height: 388px;
+              position: absolute;
+              left: 50%;
+              margin-left: -303px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -194px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove3 .v3 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove4 {
+            width: 100%;
+            height: 509px;
+            margin-top: 60px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove4 .v4 {
+              width: 754px;
+              height: 276px;
+              position: absolute;
+              left: 50%;
+              margin-left: -508px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -138px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove4 .v4 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove5 {
+            width: 100%;
+            height: 509px;
+            margin-top: 65px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove5 .v5 {
+              width: 683px;
+              height: 318px;
+              position: absolute;
+              left: 50%;
+              margin-left: -380px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -159px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove5 .v5 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove6 {
+            width: 100%;
+            height: 481px;
+            margin-top: 66px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove6 .v6 {
+              width: 700px;
+              height: 384px;
+              position: absolute;
+              left: 50%;
+              margin-left: -534px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -212.5px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove6 .v6 img {
+                display: block;
+                width: 100%; }
+          .full .positionFull .backCenter .bag .Allsection .vMove7 {
+            width: 100%;
+            height: 481px;
+            margin-top: 66px;
+            position: relative; }
+            .full .positionFull .backCenter .bag .Allsection .vMove7 .v7 {
+              width: 599px;
+              height: 425px;
+              position: absolute;
+              left: 50%;
+              margin-left: -333px;
+              opacity: 0;
+              top: 50%;
+              margin-top: -194px;
+              transition: all 1.5s; }
+              .full .positionFull .backCenter .bag .Allsection .vMove7 .v7 img {
+                display: block;
+                width: 100%; }
+    .full .positionFull .backFull1 {
+      width: 50%;
+      height: 100%;
+      background-color: #e5f9f7;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1; }
+
+/*# sourceMappingURL=subpage200.css.map */
